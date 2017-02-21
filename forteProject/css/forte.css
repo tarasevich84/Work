@@ -1,0 +1,190 @@
+*{
+	font: 12px/1.4  "Comic Sans MS Bold", "Gravitas One", Verdana, "Open Sans", Tahoma, sans-serif;
+	color: #fff;
+	font-family: 'Philosopher', sans-serif;
+}
+
+h1 {
+	font-family: 'Gabriela', serif;
+   	font-size: 36px;
+   	text-align: center;
+   	font-weight: bold;
+   	font-style: italic;
+   	line-height: 1.5;
+    /*padding-top: 20px;*/
+}
+
+h2 {
+	text-transform: uppercase;
+   	text-decoration: underline;
+   	font-family: 'Gabriela', serif;
+  	font-size: 26px;
+   	text-align: center;
+   	font-weight: bold;
+   	font-style: oblique;
+   	line-height: 1.4;
+  	margin: 30px 0 20px 0;
+}
+
+h3 {
+	text-align: center;
+   	text-transform: uppercase;
+   	font-family: 'Gabriela', serif;
+   	font-size: 21px;
+   	font-style: oblique;
+   	font-weight: bold;
+   	margin: 20px 0 30px 0;
+}
+
+p>i {
+	padding: 0 20px;
+}
+
+#background{
+	background-image: url(../images/background/bg.gif);	
+	padding: 0;
+}
+
+#bg_filter{
+	background-color: rgba(221, 248, 43, 0.4);
+	padding: 0;
+}
+
+#pageContent{
+	border: 5px solid #ffffff;
+	background-color: rgba(245, 241, 225, 0.6);
+	padding: 0;
+}
+
+/*------------------------ HEADER ------------------------*/
+.header{
+	background-image: url(../images/background/forte_bg.png);
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	
+	/*overflow: hidden;*/
+}
+
+.logo{
+     width: 35%;
+     height: auto;
+}
+
+#bandName>a {
+	display: inline-block;
+	width: 100%;
+	/*float: left;*/
+	padding: 0;
+	padding-top: 10px;
+}
+
+.forte_png{
+	width: 100%;
+}
+
+/*#serchForm {
+	padding-top: 10px;
+	padding-right: 0;
+	float: right;
+}*/
+
+#bandName>button {
+	/*margin-top: 10px;*/
+}
+
+/*------------------------- MENU --------------------------*/
+#menu{
+	margin: 0;
+	padding: 0;
+}
+
+#responsive-menu a {
+	font-family: 'Gabriela', serif;
+   	font-size: 15px;
+   	font-weight: bold;
+}
+
+/*--------------------- FORTE SERVICES ---------------------*/
+
+.item.active>img{
+	max-height: 600px;
+	object-position: center;
+}
+
+.carousel-caption{
+	display: inline-block;
+}
+
+div.carousel-caption>p {
+	font-family: 'Gabriela', serif;
+	text-transform: uppercase;
+   	font-size: 28px;
+   	font-style: oblique;
+   	font-weight: lighter;
+}
+
+.carousel-caption>h3, .carousel-caption>p {
+	background-color: rgba(249, 205, 53, 0.6);
+	border-radius: 25px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	width: 10%;
+}
+
+/*-------------------- FORTE ADVANTAGES --------------------*/
+.advantages{
+	background: rgba(203, 235, 56, 0.8);
+	display: inline-block;
+}
+
+.advantages ul li{
+	font-family: 'Gabriela', serif;
+   	font-size: 21px;
+   	font-style: italic;
+    padding: 0 40px;
+}
+
+.advantages img{
+	width: 2%;
+
+}
+
+/*--------------------- FORTE MEMBERS ----------------------*/
+.participants{
+	border-radius: 50%;
+   	overflow: hidden;
+}
+
+.participants img{
+	text-align: center;
+}
+
+/*--------------------- FORTE GALERY ----------------------*/
+
+/*--------------------- FORTE VIDEOS ----------------------*/
+
+/*--------------------- FORTE PLAYLIST ----------------------*/
+
+/*--------------------- FORTE PARTNERS ----------------------*/
+
+/*--------------------- FORTE FOOTER ----------------------*/
+
+.footer{
+	display: inline-block;
+	width: 100%;
+	background-image: url(images/background/banner_bg.jpg);
+}
+
+/*--------------------- ALL ----------------------*/
+.clear {
+
+}
+
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}

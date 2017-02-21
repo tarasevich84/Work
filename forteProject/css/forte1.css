@@ -1,0 +1,127 @@
+*{
+	font-family: 'Gabriela', serif;	
+	font-size: 16px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: 'Gabriela', serif;
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+h2{
+	font-family: 'Gabriela', serif;	
+	font-size: 27px;
+	text-align: center;
+	font-style: oblique;
+	font-weight: normal;
+	margin-bottom: 20px;
+
+}
+
+h3{
+	font-family: 'Gabriela', serif;	
+	font-size: 25px;
+	text-align: center;
+	font-style: oblique;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+h4{
+	font-family: 'Gabriela', serif;	
+	font-size: 22px;
+	text-align: center;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+p{
+
+}
+
+/*---------------- Page background ----------------------*/
+#pageBackground{
+	background-image: url(../images/background/bg.gif);
+	padding: 0;
+}
+
+#bg_filter{
+	background-color: rgba(221, 248, 43, 0.4);
+	padding: 0;
+	margin: 0;
+}
+
+#pageContent{
+	border: 3px solid #ffffff;
+	display: block;
+	padding: 0;
+}
+
+/*------------------ Page Content ----------------------*/
+#pageContent{
+	background-color: rgba(221, 248, 43, 0.4);
+}
+
+/*---------------------- Header -----------------------*/
+#header{
+	background-image: url(../images/background/forte_bg.png);
+	background-size: cover;
+	display: inline-block;
+}
+
+.forteLogo{
+	width: 50%;
+	height: auto;
+	vertical-align: middle;
+	background-size: auto;
+	margin:0 auto;
+	float: left;
+
+}
+
+.title{
+	width: 100%;
+	height: auto;
+}
+
+/*---------------------- Navigation -----------------------*/
+#responsiveMenu ul {
+	float: center;
+}
+
+/*---------------------- Services -----------------------*/
+div.carousel-caption>p {
+	text-transform: uppercase;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: lighter;
+}
+
+.carousel-caption>h2, .carousel-caption>h3, .carousel-caption>p {
+	background-color: rgba(249, 205, 53, 0.75);
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+}
+
+.carousel-caption>h2 {
+	margin-bottom: 50%;
+}
+
+p>i {
+	padding: 0 20px;
+}
+
+.item{
+	height: 70%;
+	display: inline-block;
+	background-size: cover;
+}
+
