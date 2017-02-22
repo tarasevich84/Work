@@ -4,6 +4,10 @@
 	font-family: 'Philosopher', sans-serif;
 }
 
+html{
+	
+}
+
 h1 {
 	font-family: 'Gabriela', serif;
    	font-size: 36px;
@@ -36,6 +40,13 @@ h3 {
    	margin: 20px 0 30px 0;
 }
 
+p{
+	text-align: justify;
+   	font-family: 'Gabriela', serif;
+   	font-size: 14px;
+   	font-style: italic;
+}
+
 p>i {
 	padding: 0 20px;
 }
@@ -54,6 +65,7 @@ p>i {
 	border: 5px solid #ffffff;
 	background-color: rgba(245, 241, 225, 0.6);
 	padding: 0;
+	min-width: 190px;
 }
 
 /*------------------------ HEADER ------------------------*/
@@ -110,8 +122,12 @@ p>i {
 #mainContent{
 	width: 100%;
     padding: 0;
+}
 
 /*--------------------- FORTE SERVICES ---------------------*/
+#services h2{
+	margin-top: 8px;
+}
 
 .item.active>img{
 	max-height: 600px;
@@ -143,6 +159,8 @@ div.carousel-caption>p {
 .advantages{
 	background: rgba(203, 235, 56, 0.8);
 	display: inline-block;
+	padding: 3%;
+    border-radius: 50px;
 }
 
 .advantages ul li{
@@ -158,14 +176,47 @@ div.carousel-caption>p {
 }
 
 /*--------------------- FORTE MEMBERS ----------------------*/
-.participants{
-	border-radius: 50%;
-   	overflow: hidden;
+.members{
+	display: inline-block;
+}
+.members h3{
+	margin: 0;
+	padding-top: 16px;
 }
 
-.participants img{
-	text-align: center;
+.member_content{
+	background-color: #0dc40d;
+	display: inline-block;
+    padding-bottom: 16px;
+    border-radius: 50px;
 }
+
+#kostya, #evgenia {
+	position: relative;
+}
+
+.participants_right, .participants_left{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20%;
+}
+
+.participants_left{
+	float: left;
+}
+
+.participants_right{
+	float: right;
+	position: absolute;
+    top: -50%;
+    right: 0.5%;
+}
+
+.member_description{
+    width: 100%;
+    padding: 2% 25%;
+}
+
 
 /*--------------------- FORTE GALERY ----------------------*/
 
