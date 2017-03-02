@@ -4,10 +4,6 @@
 	font-family: 'Philosopher', sans-serif;
 }
 
-html{
-	
-}
-
 h1 {
 	font-family: 'Gabriela', serif;
    	font-size: 36px;
@@ -28,8 +24,37 @@ h2 {
    	font-style: oblique;
    	line-height: 1.4;
   	margin: 30px 0 20px 0;
+  	background: url(../images/vushuvka1_right.png) repeat-x;
+  	padding: 16px 0;
+  	border-radius: 5px;
+  	text-shadow: 1.25px 1.25px 0 rgba(70, 94, 247, 0.8),
+               	 1.25px -1.25px 0 rgba(70, 94, 247, 0.8),
+            	-1.25px 1.25px 0 rgba(70, 94, 247, 0.8),
+            	-1.25px -1.25px 0 rgba(70, 94, 247, 0.8);
+	/*transition: all 2s;*/
 }
 
+h2 span {
+	background-color: rgba(249, 205, 53, 0.75);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/*  text-shadow: 1px 1px 0 orange,
+               1px -1px 0 orange,
+               -1px 1px 0 orange,
+              -1px -1px 0 orange;
+  color: white;
+  transition: all 1s;
+  }
+  H1:hover {
+    text-shadow: 1px 1px 0 yellowgreen,
+                 1px -1px 0 yellowgreen,
+                 -1px 1px 0 yellowgreen,
+                -1px -1px 0 yellowgreen;
+    color: white;
+    }
+*/
 h3 {
 	text-align: center;
    	text-transform: uppercase;
@@ -39,6 +64,8 @@ h3 {
    	font-weight: bold;
    	margin: 20px 0 30px 0;
 }
+
+
 
 p{
 	text-align: justify;
@@ -75,35 +102,80 @@ p>i {
 	width: 100%;
 	height: auto;
 	display: inline-block;
+	margin: 0;
+	padding: 0;
 	
 	/*overflow: hidden;*/
 }
 
 .logo{
-     width: 35%;
-     height: auto;
+    width: 100%;
+    height: auto;
+    background-color: rgba(248, 248, 255, 0.75);
+    border-radius: 40%;
 }
 
 #bandName>a {
 	display: inline-block;
 	width: 100%;
-	/*float: left;*/
 	padding: 0;
 	padding-top: 10px;
+	object-position: bottom;
 }
 
 .forte_png{
 	width: 100%;
 }
 
-/*#serchForm {
-	padding-top: 10px;
-	padding-right: 0;
-	float: right;
-}*/
+#searchForm {
+	border: 2px solid #fff;
+	padding: 2px;
+	border-radius: 5px;
+	margin: 16px 0;
+}
 
-#bandName>button {
-	/*margin-top: 10px;*/
+.searchText {
+	padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:3px solid #207cca;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    font-size: 16px;
+}
+
+.searchText:hover{
+	background-color:#fafafa;
+    color:#207cca;
+}
+
+
+.searchButton {
+	position:relative;
+    padding:10px 15px;
+    border:3px solid #207cca;
+    background-color:#207cca;
+    font-size: 16px;
+    color:#fafafa;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.searchButton:hover {
+	background-color:#fafafa;
+    color:#207cca;
+}
+
+.phoneNumber{
+	color: #fff;
+	font-size: larger;
+}
+
+.phoneNumber:hover {
+	color: #000;
+	font-size: x-large;
+	text-decoration: underline;
+	background-color: #fff;
+	padding: 0 10px;
 }
 
 /*------------------------- MENU --------------------------*/
@@ -116,6 +188,14 @@ p>i {
 	font-family: 'Gabriela', serif;
    	font-size: 15px;
    	font-weight: bold;
+}
+
+.navbar_table{
+	display: table-row;
+}
+
+.navbar_cell{
+	display: table-cell;
 }
 
 /*---------------------- MAIN CONTENT ----------------------*/
@@ -132,6 +212,7 @@ p>i {
 .item.active>img{
 	max-height: 600px;
 	object-position: center;
+	border-radius: 5px;
 }
 
 .carousel-caption{
@@ -144,6 +225,7 @@ div.carousel-caption>p {
    	font-size: 28px;
    	font-style: oblique;
    	font-weight: lighter;
+   	text-align: center;
 }
 
 .carousel-caption>h3, .carousel-caption>p {
@@ -153,6 +235,7 @@ div.carousel-caption>p {
 
 .carousel-control.left, .carousel-control.right {
 	width: 10%;
+	border-radius: 5px;
 }
 
 /*-------------------- FORTE ADVANTAGES --------------------*/
@@ -160,7 +243,7 @@ div.carousel-caption>p {
 	background: rgba(203, 235, 56, 0.8);
 	display: inline-block;
 	padding: 3%;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 .advantages ul li{
@@ -168,6 +251,10 @@ div.carousel-caption>p {
    	font-size: 21px;
    	font-style: italic;
     padding: 0 40px;
+/*    text-shadow: 0.5px 0.5px 0 #000000,
+               	 0.5px -0.5px 0 #000000,
+            	-0.5px 0.5px 0 #000000,
+            	-0.5px -0.5px 0 #000000;*/
 }
 
 .advantages img{
@@ -185,10 +272,10 @@ div.carousel-caption>p {
 }
 
 .member_content{
-	background-color: #0dc40d;
+	background-color: rgba(13, 196, 13, 0.8);
 	display: inline-block;
     padding-bottom: 16px;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 #kostya, #evgenia {
@@ -208,7 +295,7 @@ div.carousel-caption>p {
 .participants_right{
 	float: right;
 	position: absolute;
-    top: -50%;
+    top: -30%;
     right: 0.5%;
 }
 
@@ -219,20 +306,144 @@ div.carousel-caption>p {
 
 
 /*--------------------- FORTE GALERY ----------------------*/
+#gallery {
+   /* Prevent vertical gaps */
+   	line-height: 0;
+   	-webkit-column-count: 6;
+   	-webkit-column-gap:   0px;
+   	-moz-column-count:    6;
+   	-moz-column-gap:      0px;
+   	column-count:         6;
+   	column-gap:           0px;
+    margin: auto;
+}
+
+#gallery img {
+  	/* Just in case there are inline attributes */
+  	/*width: 100% !important;*/
+  	height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  	#gallery {
+  	-moz-column-count:    5;
+  	-webkit-column-count: 5;
+  	column-count:         5;
+	}
+}
+@media (max-width: 1000px) {
+  	#gallery {
+  	-moz-column-count:    4;
+  	-webkit-column-count: 4;
+  	column-count:         4;
+ 	}
+}
+@media (max-width: 800px) {
+  	#gallery {
+  	-moz-column-count:    3;
+  	-webkit-column-count: 3;
+  	column-count:         3;
+  	}
+}
+@media (max-width: 400px) {
+  	#gallery {
+  	-moz-column-count:    1;
+  	-webkit-column-count: 1;
+  	column-count:         1;
+  	}
+}
 
 /*--------------------- FORTE VIDEOS ----------------------*/
+.forteVideo{
+	background-color: #000;
+	border: 2px solid #fff;
+}
 
 /*--------------------- FORTE PLAYLIST ----------------------*/
 
 /*--------------------- FORTE PARTNERS ----------------------*/
+.partnersContent{
+	background-color: rgba(92, 57, 154, 0.7);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.partnersImg{
+	float: left;
+    margin: 1% 6%;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 5px 10px 1px rgb(216, 198, 41), 1px 6px 20px 2px rgb(222, 155, 57);
+}
 
 /*--------------------- FORTE FOOTER ----------------------*/
 
 .footer{
 	display: inline-block;
 	width: 100%;
-	background-image: url(images/background/banner_bg.jpg);
+	background-image: url(../images/background/banner_bg.jpg);
+	background-size: cover;
+    width: 100%;
+    height: auto;
+    display: inline-block;
 }
+
+.form {
+	width: 100%;
+   	margin: auto;
+   	/*background-color: lightblue;*/
+   	padding: 20px;
+}
+
+.error {
+	display: none;
+}
+
+/*.form_one {
+	display: block;
+	margin-bottom: 40px;
+}
+
+.form_one input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	padding-left: 10px;
+	color: #818689;
+    font-size: 15px;
+}
+
+.form_one textarea {
+	display: block;
+	width: 100%;
+	height: 90px;
+	border-radius: 7px;
+	padding-left: 10px;
+	color: #818689;
+    font-size: 18px;
+}*/
+
+/*.form_button {
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+	padding: 13px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 2px dashed #c9c9c9;
+	margin-top: 40px;
+}
+
+.form_button:hover {
+	background: rgba(0, 0, 0, 0.6);
+}*/
 
 /*--------------------- ALL ----------------------*/
 .clear {
@@ -244,3 +455,4 @@ div.carousel-caption>p {
 	display: block;
 	clear: both;
 }
+
