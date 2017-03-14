@@ -71,32 +71,44 @@
 
 		          	<!-- menu -->
 
-		            <nav class="container-fluid" id="menu">
-		              <div class="navbar navbar-default">
-		                <div class="containet">
-		                  <div class="navbar-header">
-		                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-		                      <span class="sr-only">Відкрити меню</span>
-		                      <span class="icon-bar"></span>
-		                      <span class="icon-bar"></span>
-		                      <span class="icon-bar"></span>
-		                      <span class="icon-bar"></span>
-		                    </button>
-		                  </div>
-		                  <div class="collapse navbar-collapse" id="responsive-menu"> 
-		                    <ul class="nav navbar-nav navbar_table">
-		                      <li class="navbar_cell"><a href="#services">Готові запропонувати Вам</a></li>
-		                      <li class="navbar_cell"><a href="#advantages">Наші переваги</a></li>
-		                      <li class="navbar_cell"><a href="#members">Про гурт Forte</a></li>
-		                      <li class="navbar_cell"><a href="#gallery">Фотопідбірка</a></li>
-		                      <li class="navbar_cell"><a href="#videos">Відеоролики</a></li>
-		                      <li class="navbar_cell"><a href="#partners">Наші партнери</a></li>
-		                      <li class="navbar_cell"><a href="#footer">Зв'язатись з нами</a></li>
-		                    </ul>
-		                  </div>
-		                </div>
-		              </div>
-		            </nav>
+							<nav class="navbar navbar-default">
+								<div class="container-fluid">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-menu" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										</button>
+									</div>
+
+									<!-- Collect the nav links, forms, and other content for toggling -->
+
+									<div class="collapse navbar-collapse" id="responsive-menu">
+										<ul class="nav navbar-nav">
+											<li class="active"><a href="#services">Пропонуємо Вам<span class="sr-only">(current)</span></a></li>
+											<li><a href="#advantages">Наші переваги</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Про гурт Forte<span class="caret"></span></a>
+											<ul class="dropdown-menu" id="secondDropdownMenu">
+												<li><a href="#members">Учасники гурту</a></li>
+												<li role="separator" class="divider"></li>
+												<li><a href="#gallery">Фотопідбірка</a></li>
+												<li role="separator" class="divider"></li>
+												<li><a href="#videos">Відеоролики</a></li>
+												<li role="separator" class="divider"></li>
+												<li><a href="#playlist">Аудіозаписи</a></li>
+											</ul>
+											</li>
+										</ul>
+										<ul class="nav navbar-nav">
+											<li><a href="#partners">Партнери</a></li>
+											<li><a href="#footer">Зв'язатись з нами</a></li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+								</div><!-- /.container-fluid -->
+							</nav>
 
 		          	<!-- maine content -->
 
@@ -106,7 +118,8 @@
 
 			              <section class="responsive" id="services">
 
-			                <h2 class="responsive"><span>Готові запропонувати Вам</span></h2>
+			                <h2 class="responsive"><span>Пропонуємо Вам</span></h2>
+			                <h3 class="responsive">Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
 			                <div id="carousel-example-generic" class="carousel slide responsive" data-ride="carousel">
 
 			                <!-- Indicators -->
@@ -124,21 +137,21 @@
 			                    <div class="item active responsive">
 			                      <img src="images/slides/wedding.jpg" alt="wedding_foto" class="img-responsive cover">
 			                      <div class="carousel-caption responsive">
-			                        <h3 class="responsive">Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
+			                        
 			                        <p class="responsive"><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому весіллі<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
 			                      </div>
 			                    </div>
 			                    <div class="item responsive">
 			                      <img src="images/slides/banquet.jpg" alt="banquet_foto" class="img-responsive cover">
 			                      <div class="carousel-caption responsive">
-			                        <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
+			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
 			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому банкеті<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
 			                      </div>
 			                    </div>
 			                    <div class="item responsive">
 			                      <img src="images/slides/birthday.jpg" alt="birsday_foto" class="img-responsive cover">
 			                      <div class="carousel-caption responsive">
-			                        <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
+			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
 			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому дні народження<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
 			                      </div>
 			                    </div>
@@ -146,21 +159,21 @@
 			                      <img src="images/slides/christening.jpg" alt="christening_foto" class="img-responsive cover">
 			                      <div class="carousel-caption re
 			                      ">
-			                        <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
+			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
 			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>христинах<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
 			                      </div>
 			                    </div>
 			                    <div class="item responsive">
 			                      <img src="images/slides/corporate.jpg" alt="corporate_foto" class="img-responsive cover">
 			                      <div class="carousel-caption responsive">
-			                        <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
+			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
 			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому корпоративі<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
 			                      </div>
 			                    </div>
 			                    <div class="item responsive">
 			                      <img src="images/slides/graduation.jpg" alt="graduation_foto" class="img-responsive cover">
 			                      <div class="carousel-caption responsive">
-			                        <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
+			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
 			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому випускному<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
 			                      </div>
 			                    </div>
@@ -179,28 +192,31 @@
 
 			            <!-- forte advantages -->
 
-			            <section class="forte_advantages" id="advantages">
+								<section class="forte_advantages" id="advantages">
 			                <h2><span>Наші переваги</span></h2>
 			                <div class="advantages responsive">
-				                <div class="row">
-				                    <ul>
-				                    	<li><img src="images/yes.png" alt="image"> Ми гарантуємо якісне звучання , живий вокал  та шалені емоції;</li>
-				                    	<li><img src="images/yes.png" alt="image"> Склад колективу корегується клієнтом;</li>
-				                    	<li><img src="images/yes.png" alt="image"> Зважаючи на індивідуальність свята корегуємо кількість учасників гурту, з задоволенням запрошуємо наших друзів-музикантів (скрипка, саксофон і т.д.);</li>
-				                    	<li><img src="images/yes.png" alt="image"> Плідна праця у різних колективах, містах, закладах забезпечила неоціненний досвід  (понад 15 років) і вміння задовольнити різноманітну публіку;</li>
-				                    	<li><img src="images/yes.png" alt="image"> Також у нас неймовірно багатий репертуар;</li>
-				                    	<li><img src="images/yes.png" alt="image"> Великий перелік українських  пісень (польки, вальси, народні та сучасні), а також англійські, французькі, італійські, польські, російські пісні;</li>
-				                    	<li><img src="images/yes.png" alt="image"> Від 80-х до сьогодення;</li>
-				                    	<li><img src="images/yes.png" alt="image"> Гурт Forte - це вигідна ціна, якість та приємні враження Вашого свята !!!</li>
-				                    </ul>
-				                </div>
+				               <div class="row">
+				                  <ul class="col-lg-9 col-md-9 col-sm-12 col-xs-12" >
+											<li><img src="images/yes.png" alt="image"> Ми гарантуємо якісне звучання , живий вокал  та шалені емоції;</li>
+											<li><img src="images/yes.png" alt="image"> Склад колективу корегується клієнтом;</li>
+											<li><img src="images/yes.png" alt="image"> Зважаючи на індивідуальність свята корегуємо кількість учасників гурту, з задоволенням запрошуємо наших друзів-музикантів (скрипка, саксофон і т.д.);</li>
+											<li><img src="images/yes.png" alt="image"> Плідна праця у різних колективах, містах, закладах забезпечила неоціненний досвід  (понад 15 років) і вміння задовольнити різноманітну публіку;</li>
+											<li><img src="images/yes.png" alt="image"> Також у нас неймовірно багатий репертуар;</li>
+											<li><img src="images/yes.png" alt="image"> Великий перелік українських  пісень (польки, вальси, народні та сучасні), а також англійські, французькі, італійські, польські, російські пісні;</li>
+											<li><img src="images/yes.png" alt="image"> Від 80-х до сьогодення;</li>
+											<li><img src="images/yes.png" alt="image"> Гурт Forte - це вигідна ціна, якість та приємні враження Вашого свята !!!</li>
+				                  </ul>
+				                  <div class="col-lg-3 col-md-3 hidden-sm hidden-xs colorfulGuitar">
+											<img src="images/guitar.png" alt="image_guitar">
+				                  </div>
+				               </div>
 			                </div>
-			            </section>
+								</section>
 
 			            <!-- forte band members -->
 
-			            <section class="members" id="members">
-			                <h2><span>Про гурт forte</span></h2>
+			            	<section class="members" id="members">
+			                <h2><span>Про гурт Forte</span></h2>
 			                <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 member_content">
 			                  	<h3>Незмінні учасники гурту</h3>
 			                  	<div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 clear">
@@ -230,10 +246,10 @@
 				                    </div>
 			                  	</div>
 			                </div>
-			            </section>
+			            	</section>
 
 			            <!-- forte galery -->
-			            <section class="forteGallery">
+								<section class="forteGallery">
 			                <h2><span>Фотопідбірка</span></h2>
 			                <div class="row " id="gallery">
 			                  	<img src="images/galery/01.jpg" alt="photo" class="img-responsive img-thumbnail">
@@ -278,11 +294,11 @@
 			                  	<img src="images/galery/40.jpg" alt="photo" class="img-responsive img-thumbnail">
 			                  	<!-- <img src="images/galery/41.jpg" alt="photo" class="img-responsive img-thumbnail"> -->
 			                </div>
-			            </section>
+								</section>
 
 			            <!-- forte videos -->
 
-			            <section class="clear" id="videos">
+								<section class="clear" id="videos">
 			                <h2><span>Відеозаписи з виступів</span></h2>
 			                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			                	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -307,12 +323,12 @@
 					                </div>
 					            </div>
 			                </div>
-			            </section>
+								</section>
 
 			            <!-- forte playlist -->
 
-			            <section id="playlist">
-			                <h2><span>Музика в нашому виконанні</span></h2>
+								<section id="playlist">
+			                <h2><span>Наша музика</span></h2>
 			                <div class="container" id="songs">
 			                  <ol>
 			                    <li></li>
@@ -327,11 +343,11 @@
 			                    <li></li>
 			                  </ol>
 			                </div>
-			            </section>
+								</section>
 
 			            <!-- forte partners -->
 
-			            <section class="col-lg-12 col-md-12 col-sm-12" id="partners">
+								<section class="col-lg-12 col-md-12 col-sm-12" id="partners">
 			                <div class="row">
 			                	<h2><span>Наші партнери</span></h2>
 			                	<div class=" col-lg-12 col-md-12 col-sm-12 partnersContent">
@@ -357,7 +373,8 @@
 				                	</div>
 			                	</div>
 			                </div>
-			            </section>
+								</section>
+		            
 		            </main>
 
 		          	<!-- footer -->
@@ -378,7 +395,7 @@
 			                            <textarea  placeholder="Вкажіть текст повідомлення" name="message" rows="3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input"></textarea>
 			                            <p class="error">Будь ласка заповніть поле</p>
 			                        </fieldset>
-			                        <button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formMessageButton">Send</button>
+			                        <button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formMessageButton">Надіслати</button>
 		                    	</form>
 		                	</div>
 		                	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -386,8 +403,8 @@
 			                  		<h4>Зателефонуйте нам</h4>
 			                  		<p>
 			                  			<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-			                    		<a href="callto:+380986448772" class="phoneNumber">+38 (098) 644-87-72</a>
-			                		</p>
+			                    			<a href="callto:+380986448772" class="phoneNumber">+38 (098) 644-87-72</a>
+			                			</p>
 			                	</div>
 			                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social clear">
 			                  		<h4>Ми в соціальних мережах</h4>
@@ -424,15 +441,15 @@
 	    <script src="js/formValidate.js"></script>
 	    <script>
 	      function getRandomSize(min, max) {
-	        return Math.round(Math.random() * (max - min) + min);
+	      	return Math.round(Math.random() * (max - min) + min);
 	      }
 
 	      var allImages = "";
 
 	      for (var i = 0; i < 25; i++) {
-	        var width = getRandomSize(200, 400);
-	        var height =  getRandomSize(200, 400);
-	        allImages += '<img src="https://placekitten.com/'+width+'/'+height+'" alt="pretty kitty">';
+	      	var width = getRandomSize(200, 400);
+	      	var height =  getRandomSize(200, 400);
+	      	allImages += '<img src="https://placekitten.com/'+width+'/'+height+'" alt="pretty kitty">';
 	      }
 
 	      $('#photos').append(allImages);
