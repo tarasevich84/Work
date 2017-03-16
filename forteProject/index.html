@@ -34,46 +34,48 @@
 	    <![endif]-->
   	</head>
   	<body>
-	  	<!-- Page background -->
 
-	    <div class="container-fluid clear" id="background">
-	      	<div class="container-fluid clear" id="bg_filter">
+		<!-- Page background -->
+		<div class="container-fluid clear" id="background">
+			<!-- <div class="container-fluid clear" id="bg_filter"> -->
 
-	        	<!--Page content-->
+				<!--Page content-->
+				<div class="container-fluid" id="pageContent">
 
-		        <div class="container" id="pageContent">
+					<!-- header section -->
 
-		          	<!-- header section -->
+						<header class="header">
+							<div class="container">
+								<div class="col-lg-12 col-md-12 col-sm-12" id="header">
+									<div class="col-lg-2 col-md-2 col-sm-2">
+										<a href="index.html"><img src="images/logo_forte.png" alt="forteLogo" class="logo"></a>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6" id="bandName">
+										<a href="index.html" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<h1 class="responsive" >Музичний гурт</h1>
+											<img src="images/forte.png" alt="bandName" class="forte_png">
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<form action="https://www.google.com.ua/" method="post" target="_blank" class="col-lg-12 col-md-12 col-sm-12 hidden-xs" id="searchForm">
+											<input type="text" placeholder="Search..." required class="col-lg-9 col-md-9 col-sm-9 hidden-xs searchText">
+											<input type="button" value="Search" class="col-lg-3 col-md-3 col-sm-3 hidden-xs searchButton">
+										</form>
+										<p>
+											<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+											<a href="callto:+380986448772" class="phoneNumber">+38 (098) 644-87-72</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</header>
 
-		            <header class="header">
-		              	<div class="col-lg-12 col-md-12 col-sm-12" id="header">
-			                <div class="col-lg-2 col-md-2 col-sm-2">
-			                  	<a href="index.html"><img src="images/logo_forte.png" alt="forteLogo" class="logo img-responsive"></a>
-			                </div>
-			                <div class="col-lg-6 col-md-6 col-sm-6" id="bandName">
-			                  	<h1 class="responsive" >Музичний гурт</h1>
-			                  	<a href="index.html" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			                    	<img src="images/forte.png" alt="bandName" class="forte_png">
-			                  	</a>
-			                </div>
-			                <div class="col-lg-4 col-md-4 col-sm-4">
-			                	<form action="https://www.google.com.ua/" method="post" target="_blank" class="col-lg-12 col-md-12 col-sm-12 hidden-xs" id="searchForm">
-			                    	<input type="text" placeholder="Search..." required class="col-lg-9 col-md-9 col-sm-9 hidden-xs searchText">
-			                    	<input type="button" value="Search" class="col-lg-3 col-md-3 col-sm-3 hidden-xs searchButton">
-			                	</form>
-			                	<p>
-			                		<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-			                    	<a href="callto:+380986448772" class="phoneNumber">+38 (098) 644-87-72</a>
-			                	</p>
-			                </div>
-		              	</div>
-		            </header>
+					<!-- menu -->
 
-		          	<!-- menu -->
-
-							<nav class="navbar navbar-default">
-								<div class="container-fluid">
-									<!-- Brand and toggle get grouped for better mobile display -->
+						<nav class="navbar navbar-default">
+							<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="container">
 									<div class="navbar-header">
 										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsive-menu" aria-expanded="false">
 										<span class="sr-only">Toggle navigation</span>
@@ -91,13 +93,13 @@
 											<li><a href="#advantages">Наші переваги</a></li>
 											<li class="dropdown">
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Про гурт Forte<span class="caret"></span></a>
-											<ul class="dropdown-menu" id="secondDropdownMenu">
+											<ul class="dropdown-menu" id="dropdownMenu">
 												<li><a href="#members">Учасники гурту</a></li>
-												<li role="separator" class="divider"></li>
+												<!-- <li role="separator" class="divider"></li> -->
 												<li><a href="#gallery">Фотопідбірка</a></li>
-												<li role="separator" class="divider"></li>
+												<!-- <li role="separator" class="divider"></li> -->
 												<li><a href="#videos">Відеоролики</a></li>
-												<li role="separator" class="divider"></li>
+												<!-- <li role="separator" class="divider"></li> -->
 												<li><a href="#playlist">Аудіозаписи</a></li>
 											</ul>
 											</li>
@@ -107,352 +109,355 @@
 											<li><a href="#footer">Зв'язатись з нами</a></li>
 										</ul>
 									</div><!-- /.navbar-collapse -->
-								</div><!-- /.container-fluid -->
-							</nav>
+								</div>
+							</div><!-- /.container-fluid -->
+						</nav>
 
-		          	<!-- maine content -->
+					<!-- maine content -->
 
-		            <main class="container" id="mainContent">
+						<main class="container" id="mainContent">
 
-			            <!-- forte services slider-->
+							<!-- forte services slider-->
 
-			              <section class="responsive" id="services">
+								<section id="services">
 
-			                <h2 class="responsive"><span>Пропонуємо Вам</span></h2>
-			                <h3 class="responsive">Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
-			                <div id="carousel-example-generic" class="carousel slide responsive" data-ride="carousel">
+									<h2>Пропонуємо Вам</h2>
+									<div class="container">
+										<h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3>
+										<div id="carousel-example-generic" class="carousel slide responsive" data-ride="carousel">
 
-			                <!-- Indicators -->
+										<!-- Indicators -->
 
-			                  <ol class="carousel-indicators responsive">
-			                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-			                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-			                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-			                  </ol>
+											<ol class="carousel-indicators responsive">
+												<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+												<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+												<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+												<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+												<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+												<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+											</ol>
 
-			                  <div class="carousel-inner responsive" role="listbox">
-			                    <div class="item active responsive">
-			                      <img src="images/slides/wedding.jpg" alt="wedding_foto" class="img-responsive cover">
-			                      <div class="carousel-caption responsive">
-			                        
-			                        <p class="responsive"><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому весіллі<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-			                      </div>
-			                    </div>
-			                    <div class="item responsive">
-			                      <img src="images/slides/banquet.jpg" alt="banquet_foto" class="img-responsive cover">
-			                      <div class="carousel-caption responsive">
-			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
-			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому банкеті<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-			                      </div>
-			                    </div>
-			                    <div class="item responsive">
-			                      <img src="images/slides/birthday.jpg" alt="birsday_foto" class="img-responsive cover">
-			                      <div class="carousel-caption responsive">
-			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
-			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому дні народження<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-			                      </div>
-			                    </div>
-			                    <div class="item responsive">
-			                      <img src="images/slides/christening.jpg" alt="christening_foto" class="img-responsive cover">
-			                      <div class="carousel-caption re
-			                      ">
-			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
-			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>христинах<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-			                      </div>
-			                    </div>
-			                    <div class="item responsive">
-			                      <img src="images/slides/corporate.jpg" alt="corporate_foto" class="img-responsive cover">
-			                      <div class="carousel-caption responsive">
-			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
-			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому корпоративі<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-			                      </div>
-			                    </div>
-			                    <div class="item responsive">
-			                      <img src="images/slides/graduation.jpg" alt="graduation_foto" class="img-responsive cover">
-			                      <div class="carousel-caption responsive">
-			                        <!-- <h3>Музичний гурт forte - завжди хороший настрій та незабутні враження від свята. З великим задоволенням забезпечимо фантастичну атмосферу на:</h3> -->
-			                        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>вашому випускному<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-			                      </div>
-			                    </div>
-			                  </div>
+											<div class="carousel-inner" role="listbox">
+												<div class="item active">
+													<img src="images/slides/wedding.jpg" alt="wedding_foto" class="img-responsive cover">
+													<div class="carousel-caption responsive">
+														<p class="responsive"><i class="fa fa-chevron-left" aria-hidden="true"></i><span>вашому весіллі</span><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+												  </div>
+												</div>
+												<div class="item">
+													<img src="images/slides/banquet.jpg" alt="banquet_foto" class="img-responsive cover">
+													<div class="carousel-caption responsive">
+														<p><i class="fa fa-chevron-left" aria-hidden="true"></i><span>вашому бeнкеті</span><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+													</div>
+												</div>
+												<div class="item">
+													<img src="images/slides/birthday.jpg" alt="birsday_foto" class="img-responsive cover">
+													<div class="carousel-caption responsive">
+														<p><i class="fa fa-chevron-left" aria-hidden="true"></i><span>вашому дні народження</span><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+													</div>
+												</div>
+												<div class="item">
+													<img src="images/slides/christening.jpg" alt="christening_foto" class="img-responsivecover">
+													<div class="carousel-caption">
+														<p><i class="fa fa-chevron-left" aria-hidden="true"></i><span>христинах</span><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+													</div>
+												</div>
+												<div class="item">
+													<img src="images/slides/corporate.jpg" alt="corporate_foto" class="img-responsive cover">
+													<div class="carousel-caption">
+														<p><i class="fa fa-chevron-left" aria-hidden="true"></i><span>вашому корпоративі</span><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+													</div>
+												</div>
+												<div class="item">
+													<img src="images/slides/graduation.jpg" alt="graduation_foto" class="img-responsive cover">
+													<div class="carousel-caption responsive">
+														<p><i class="fa fa-chevron-left" aria-hidden="true"></i><span>вашому випускному</span><i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+													</div>
+												</div>
+											</div>
 
-			                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			                    <span class="sr-only">Previous</span>
-			                  </a>
-			                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			                    <span class="sr-only">Next</span>
-			                  </a>
-			                </div>
-			              </section>
+											<!-- Controls -->
 
-			            <!-- forte advantages -->
+											<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+												<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+									</div>
+								</section>
+
+							<!-- forte advantages -->
 
 								<section class="forte_advantages" id="advantages">
-			                <h2><span>Наші переваги</span></h2>
-			                <div class="advantages responsive">
-				               <div class="row">
-				                  <ul class="col-lg-9 col-md-9 col-sm-12 col-xs-12" >
-											<li><img src="images/yes.png" alt="image"> Ми гарантуємо якісне звучання , живий вокал  та шалені емоції;</li>
-											<li><img src="images/yes.png" alt="image"> Склад колективу корегується клієнтом;</li>
-											<li><img src="images/yes.png" alt="image"> Зважаючи на індивідуальність свята корегуємо кількість учасників гурту, з задоволенням запрошуємо наших друзів-музикантів (скрипка, саксофон і т.д.);</li>
-											<li><img src="images/yes.png" alt="image"> Плідна праця у різних колективах, містах, закладах забезпечила неоціненний досвід  (понад 15 років) і вміння задовольнити різноманітну публіку;</li>
-											<li><img src="images/yes.png" alt="image"> Також у нас неймовірно багатий репертуар;</li>
-											<li><img src="images/yes.png" alt="image"> Великий перелік українських  пісень (польки, вальси, народні та сучасні), а також англійські, французькі, італійські, польські, російські пісні;</li>
-											<li><img src="images/yes.png" alt="image"> Від 80-х до сьогодення;</li>
-											<li><img src="images/yes.png" alt="image"> Гурт Forte - це вигідна ціна, якість та приємні враження Вашого свята !!!</li>
-				                  </ul>
-				                  <div class="col-lg-3 col-md-3 hidden-sm hidden-xs colorfulGuitar">
-											<img src="images/guitar.png" alt="image_guitar">
-				                  </div>
-				               </div>
-			                </div>
+									<h2>Наші переваги</h2>
+									<div class="container">
+										<div class="advantages responsive">
+											<div class="row">
+												<ul class="col-lg-9 col-md-9 col-sm-12 col-xs-12" >
+													<li><img src="images/yes.png" alt="image"> Ми гарантуємо якісне звучання , живий вокал  та 	шалені емоції;</li>
+													<li><img src="images/yes.png" alt="image"> Склад колективу корегується клієнтом;</li>
+													<li><img src="images/yes.png" alt="image"> Зважаючи на індивідуальність свята корегуємо 	кількість учасників гурту, з задоволенням запрошуємо наших друзів-музикантів (скрипка, 	саксофон і т.д.);</li>
+													<li><img src="images/yes.png" alt="image"> Плідна праця у різних колективах, містах, закладах 	забезпечила неоціненний досвід  (понад 15 років) і вміння задовольнити різноманітну публіку;</	li>
+													<li><img src="images/yes.png" alt="image"> Також у нас неймовірно багатий репертуар;</li>
+													<li><img src="images/yes.png" alt="image"> Великий перелік українських  пісень (польки, 	вальси, народні та сучасні), а також англійські, французькі, італійські, польські, російські 	пісні;</li>
+													<li><img src="images/yes.png" alt="image"> Від 80-х до сьогодення;</li>
+													<li><img src="images/yes.png" alt="image"> Гурт Forte - це вигідна ціна, якість та приємні враження Вашого свята !!!</li>
+												</ul>
+												<div class="col-lg-3 col-md-3 hidden-sm hidden-xs colorfulGuitar">
+													<img src="images/guitar.png" alt="image_guitar">
+												</div>
+											</div>
+										</div>
+									</div>
 								</section>
 
-			            <!-- forte band members -->
+							<!-- forte band members -->
 
-			            	<section class="members" id="members">
-			                <h2><span>Про гурт Forte</span></h2>
-			                <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 member_content">
-			                  	<h3>Незмінні учасники гурту</h3>
-			                  	<div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 clear">
-				                    <div id="petro">
-				                      	<img src="images/members/petro.png" alt="foto_petro" class="participants_left img-responsive">
-				                      	<p class="member_description">
-				                        	some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
-				                      	</p>
-				                    </div>
-				                    <div id="kostya" class="clear">
-				                      	<img src="images/members/kostya.png" alt="foto_kostya" class="participants_right img-responsive">
-				                      	<p class="member_description">
-				                        	some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
-				                      	</p>
-				                    </div>
-				                    <div id="irina">
-				                      	<img src="images/members/iruna.png" alt="foto_irina" class="participants_left img-responsive">
-				                      	<p class="member_description">
-				                        	some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
-				                      	</p>
-				                    </div>
-				                    <div id="evgenia">
-				                      	<img src="images/members/evgenia.png" alt="foto_evgenia" class="participants_right img-responsive">
-				                      	<p class="member_description">
-				                        	some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
-				                      	</p>
-				                    </div>
-			                  	</div>
-			                </div>
-			            	</section>
+								<section class="container" id="members">
+									<h2>Про гурт Forte</h2>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 member_content">
+										<h3>Незмінні учасники гурту</h3>
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 clear">
+											<div id="petro">
+												<img src="images/members/petro.png" alt="foto_petro" class="participants_left img-responsive">
+												<p class="member_description">
+													some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
+												</p>
+											</div>
+											<div id="kostya" class="clear">
+												<img src="images/members/kostya.png" alt="foto_kostya" class="participants_right img-responsive">
+												<p class="member_description">
+													some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
+												</p>
+											</div>
+											<div id="irina">
+												<img src="images/members/iruna.png" alt="foto_irina" class="participants_left img-responsive">
+												<p class="member_description">
+													some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
+												</p>
+											</div>
+											<div id="evgenia">
+												<img src="images/members/evgenia.png" alt="foto_evgenia" class="participants_right img-responsive">
+												<p class="member_description">
+													some about the member: Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.
+												</p>
+											</div>
+										</div>
+									</div>
+								</section>
 
-			            <!-- forte galery -->
+							<!-- forte galery -->
 								<section class="forteGallery">
-			                <h2><span>Фотопідбірка</span></h2>
-			                <div class="row " id="gallery">
-			                  	<img src="images/galery/01.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/02.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/03.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/04.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/05.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/06.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/07.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/08.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/09.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/10.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/11.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/12.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/13.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/14.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/15.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/16.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/17.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/18.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/19.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/20.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/21.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/22.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/23.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/24.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/25.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/26.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/27.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/28.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/29.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/30.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/31.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/32.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/33.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/34.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/35.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/36.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/37.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/38.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/39.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<img src="images/galery/40.jpg" alt="photo" class="img-responsive img-thumbnail">
-			                  	<!-- <img src="images/galery/41.jpg" alt="photo" class="img-responsive img-thumbnail"> -->
-			                </div>
+									<h2>Фотопідбірка</h2>
+									<div class="container">
+										<div class="row " id="gallery">
+											<img src="images/galery/01.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/02.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/03.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/04.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/05.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/06.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/07.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/08.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/09.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/10.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/11.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/12.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/13.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/14.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/15.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/16.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/17.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/18.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/19.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/20.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/21.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/22.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/23.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/24.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/25.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/26.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/27.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/28.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/29.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/30.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/31.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/32.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/33.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/34.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/35.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/36.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/37.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/38.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/39.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<img src="images/galery/40.jpg" alt="photo" class="img-responsive 	img-thumbnail">
+											<!-- <img src="images/galery/41.jpg" alt="photo" class="img-responsive img-thumbnail"> -->
+										</div>
+									</div>
 								</section>
 
-			            <!-- forte videos -->
+							<!-- forte videos -->
 
-								<section class="clear" id="videos">
-			                <h2><span>Відеозаписи з виступів</span></h2>
-			                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			                	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				                    <div class="embed-responsive embed-responsive-4by3 forteVideo">
-				                      <!-- <iframe class="embed-responsive-item" src="video/Forte_demo1.mp4">Вибачте ваш браузер не підтримує відтворення відео</iframe>
-				                    </div> -->
-					                    <video controls loop preload="metadata" poster="images/forte.png">
-											<source src="video/Forte_demo1.webm" type='video/webm; codecs="vp8, vorbis"'>
-											<source src="video/Forte_demo1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-											<source src="video/Forte_demo1.ogv" type='video/ogg; codecs="theora, vorbis"'>
-										</video>
-				                  	</div>
-				                </div>
-					            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					                <div class="embed-responsive embed-responsive-4by3 forteVideo">
-					                      <!-- <iframe class="embed-responsive-item" src="video/Forte_demo2.mp4">Вибачте ваш браузер не підтримує відтворення відео</iframe> -->
-					                	<video controls loop preload="metadata" poster="images/forte.png">
-					                		<source src="video/Forte_demo2.webm" type='video/webm; codecs="vp8, vorbis"'>
-											<source src="video/Forte_demo2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-											<source src="video/Forte_demo2.ogv" type='video/ogg; codecs="theora, vorbis"'>
-										</video>
-					                </div>
-					            </div>
-			                </div>
+								<section class="container clear" id="videos">
+									<h2>Відеозаписи з виступів</h2>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+											<div class="embed-responsive embed-responsive-4by3 forteVideo">
+												<!-- <iframe class="embed-responsive-item" src="video/Forte_demo1.mp4">Вибачте ваш браузер не підтримує відтворення відео</iframe> -->
+												<video controls loop preload="metadata" poster="images/forte.png">
+													<source src="video/Forte_demo1.webm" type='video/webm; 		codecs="vp8, vorbis"'>
+													<source src="video/Forte_demo1.mp4" type='video/mp4; 		codecs="avc1.42E01E, mp4a.40.2"'>
+													<source src="video/Forte_demo1.ogv" type='video/ogg; 		codecs="theora, vorbis"'>
+												</video>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+											<div class="embed-responsive embed-responsive-4by3 forteVideo">
+												<!-- <iframe class="embed-responsive-item" src="video/Forte_demo2.mp4">Вибачте ваш браузер не підтримує відтворення відео</iframe> -->
+												<video controls loop preload="metadata" poster="images/forte.png">
+													<source src="video/Forte_demo2.webm" type='video/webm; codecs="vp8, vorbis"'>
+													<source src="video/Forte_demo2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+													<source src="video/Forte_demo2.ogv" type='video/ogg; codecs="theora, vorbis"'>
+												</video>
+											</div>
+										</div>
+									</div>
 								</section>
 
-			            <!-- forte playlist -->
+							<!-- forte playlist -->
 
 								<section id="playlist">
-			                <h2><span>Наша музика</span></h2>
-			                <div class="container" id="songs">
-			                  <ol>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                    <li></li>
-			                  </ol>
-			                </div>
+									<h2>Наша музика</h2>
+									<div class="container" id="songs">
+										<ol>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ol>
+									</div>
 								</section>
 
-			            <!-- forte partners -->
+							<!-- forte partners -->
 
-								<section class="col-lg-12 col-md-12 col-sm-12" id="partners">
-			                <div class="row">
-			                	<h2><span>Наші партнери</span></h2>
-			                	<div class=" col-lg-12 col-md-12 col-sm-12 partnersContent">
-				                	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="rafael">
-					                    <h3><a href="http://sonatahotel.com.ua" target="_blank">Соната</a></h3>
-					                    <a href="http://sonatahotel.com.ua" target="_blank" class="partnersImg">
-					                    	<img src="images/sonata_logo.png" alt="sonata_logo" class="img-responsive">
-					                    </a>
-					                    <p>
-					                    	Готель “Соната” у Львові знаходиться в сучасній частині міста та стане найкращим вибором для Вашого відпочинку та роботи! Бездоганний сервіс, сучасні технології та вдале розташування створять незабутні враження про Ваше перебування у готелі!
-					                    </p>
-					                    <map></map>
-				                	</div>
-				                	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="sonata">
-					                    <h3><a href="http://rafael.com.ua" target="_blank">Рафаель</a></h3>
-					                    <a href="http://rafael.com.ua" target="_blank" class="partnersImg">
-					                    	<img src="images/rafael_logo.png" alt="rafael_logo" class="img-responsive">
-					                    </a>
-					                    <p>
-					                    	Готельно-ресторанний комплекс "Рафаель"- новий, затишний, що відповідає європейським стандартам і знаходиться на окраїні старовинного та, мабуть, найкрасивішого міста України – Львова. Розташуванння, біля кільцевої дороги забезпечує вільний доїзд до комплексу та заміський затишок для його гостей.
-					                    </p>
-					                    <map></map>
-				                	</div>
-			                	</div>
-			                </div>
+								<section class="container" id="partners">
+									<div class="row">
+										<h2>Наші партнери</h2>
+										<div class=" col-lg-12 col-md-12 col-sm-12 partnersContent">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="rafael">
+												<h3><a href="http://sonatahotel.com.ua" target="_blank">Соната</a></h3>
+												<a href="http://sonatahotel.com.ua" target="_blank" class="partnersImg">
+													<img src="images/sonata_logo.png" alt="sonata_logo" class="img-responsive">
+												</a>
+												<p><span>
+													Готель “Соната” у Львові знаходиться в сучасній частині міста та стане найкращим вибором для Вашого відпочинку та роботи! Бездоганний сервіс, сучасні технології та вдале розташування створять незабутні враження про Ваше перебування у готелі!
+												</span></p>
+												<map></map>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="sonata">
+												<h3><a href="http://rafael.com.ua" target="_blank">Рафаель</a></h3>
+												<a href="http://rafael.com.ua" target="_blank" class="partnersImg">
+													<img src="images/rafael_logo.png" alt="rafael_logo" class="img-responsive">
+												</a>
+												<p><span>
+													Готельно-ресторанний комплекс "Рафаель"- новий, затишний, що відповідає європейським стандартам і знаходиться на окраїні старовинного та, мабуть, найкрасивішого міста України – Львова. Розташуванння, біля кільцевої дороги забезпечує вільний доїзд до комплексу та заміський затишок для його гостей.
+												</span></p>
+												<map></map>
+											</div>
+										</div>
+									</div>
 								</section>
-		            
-		            </main>
 
-		          	<!-- footer -->
+						</main>
 
-		            <footer class="footer" id="footer">
-		            	<section class="container">
-		                	<h3>Зв'язуйтесь з нами<br>Завжди раді новим знайомствам</h3>
-		                	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 formPosition">
-		                  		<h4>Напишіть нам повідомлення</h4>
-		                  		<form action="send.php" method="post" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formMessage" id="form">
-			                        <fieldset >
-			                            <input class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input" type="text" placeholder="Вкажіть ім'я" name="name">
-			                            <p class="error">Будь ласка заповніть поле</p>
-			                            <input type="email" placeholder="Вкажіть email" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input">
-			                            <p class="error">Будь ласка заповніть поле</p>
-			                            <input type="tel" placeholder="Вкажіть контакний номер телефону" name="phone" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input">
-			                            <p class="error">Будь ласка заповніть поле</p>
-			                            <textarea  placeholder="Вкажіть текст повідомлення" name="message" rows="3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input"></textarea>
-			                            <p class="error">Будь ласка заповніть поле</p>
-			                        </fieldset>
-			                        <button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formMessageButton">Надіслати</button>
-		                    	</form>
-		                	</div>
-		                	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			                  		<h4>Зателефонуйте нам</h4>
-			                  		<p>
-			                  			<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-			                    			<a href="callto:+380986448772" class="phoneNumber">+38 (098) 644-87-72</a>
-			                			</p>
-			                	</div>
-			                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social clear">
-			                  		<h4>Ми в соціальних мережах</h4>
-			                  		<ul>
-			                  			<li><a href="#" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
-			                  			<li><a href="#" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
-			                  			<li><a href="#" target="_blank"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a></li>
-			                  			<li><a href="#" target="_blank"><i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i></a></li>
-			                  			<li><a href="#" target="_blank"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></a></li>
-			                  		</ul>
-			                	</div>
-			                </div>
-			                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 copy">
-			                	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
-			                		<p>Всі права захищені &copy; 2017 р.</p>
-			                	</div>
-			                	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
-			                		<p>Даний сайт розробив - <a href="#" target="_blank">Taras Shlomskyi</a></p>
-			                	</div>
-			                </div>
-		            	</section>
-		            </footer>
-		        </div>
-	        </div>
-	    </div>
+					<!-- footer -->
+
+						<footer class="footer" id="footer">
+							<section class="container">
+								<h3>Зв'язуйтесь з нами<br>Завжди раді новим знайомствам</h3>
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 formPosition">
+									<h4>Напишіть нам повідомлення</h4>
+									<form action="send.php" method="post" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formMessage" id="form">
+										<fieldset >
+											<input class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input" type="text" placeholder="Вкажіть ім'я" name="name">
+											<p class="error">Будь ласка заповніть поле</p>
+											<input type="email" placeholder="Вкажіть email" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input">
+											<p class="error">Будь ласка заповніть поле</p>
+											<input type="tel" placeholder="Вкажіть контакний номер телефону" name="phone" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input">
+											<p class="error">Будь ласка заповніть поле</p>
+											<textarea  placeholder="Вкажіть текст повідомлення" name="message" rows="3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input"></textarea>
+											<p class="error">Будь ласка заповніть поле</p>
+										</fieldset>
+										<button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formMessageButton">Надіслати</button>
+									</form>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<h4>Зателефонуйте нам</h4>
+										<p>
+											<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+											<a href="callto:+380986448772" class="phoneNumber">+38 (098) 644-87-72</a>
+										</p>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social clear">
+										<h4>Ми в соціальних мережах</h4>
+										<ul>
+											<li><a href="#" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+											<li><a href="#" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+											<li><a href="#" target="_blank"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a></li>
+											<li><a href="#" target="_blank"><i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i></a></li>
+											<li><a href="#" target="_blank"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 copy">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
+										<p>Всі права захищені &copy; 2017 р.</p>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
+										<p>Даний сайт розробив - <a href="#" target="_blank">Taras Shlomskyi</a></p>
+									</div>
+								</div>
+							</section>
+						</footer>
+
+				</div>
+
+			<!-- </div> -->
+		</div>
 
 		<!-- end -->
 
-	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	    <script src="js/jquery-3.1.1.min.js"></script>
-	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="js/bootstrap.js"></script>
-	    <script src="js/formValidate.js"></script>
-	    <script>
-	      function getRandomSize(min, max) {
-	      	return Math.round(Math.random() * (max - min) + min);
-	      }
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/formValidate.js"></script>
+		<script>
+			function getRandomSize(min, max) {
+				return Math.round(Math.random() * (max - min) + min);
+			}
 
-	      var allImages = "";
+			var allImages = "";
 
-	      for (var i = 0; i < 25; i++) {
-	      	var width = getRandomSize(200, 400);
-	      	var height =  getRandomSize(200, 400);
-	      	allImages += '<img src="https://placekitten.com/'+width+'/'+height+'" alt="pretty kitty">';
-	      }
+			for (var i = 0; i < 25; i++) {
+				var width = getRandomSize(200, 400);
+				var height =  getRandomSize(200, 400);
+				allImages += '<img src="https://placekitten.com/'+width+'/'+height+'" alt="pretty kitty">';
+			}
 
-	      $('#photos').append(allImages);
-	    </script>
-  	</body>
+			$('#photos').append(allImages);
+		</script>
+	</body>
 </html>
