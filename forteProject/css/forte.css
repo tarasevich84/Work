@@ -3,6 +3,10 @@
 	color: #fff;
 }
 
+body{
+  /*min-width: 320px;*/
+}
+
 h1 {
 	font-family: 'Gabriela', serif;
   font-size: 50px;
@@ -26,11 +30,13 @@ h2 {
   transition: all 1s;
 }
 
-/*h2 span {
-  background-color: rgba(249, 205, 53, 0.75);
-  width: 100%;
-  height: auto;
-}*/
+h2 span {
+  color: #465ef7;
+}
+
+.titleLine{
+  padding: 0 20px;
+}
 
 h3 {
 	text-align: center;
@@ -54,7 +60,7 @@ h4 {
 }
 
 
-p{
+p {
 	text-align: justify;
   font-family: 'Gabriela', serif;
   font-size: 14px;
@@ -82,7 +88,6 @@ p>i {
   margin: 0;
   padding: 0;
 }
-
 
 /*------------------------ HEADER ------------------------*/
 .header{
@@ -142,7 +147,6 @@ p>i {
 	background-color:#fafafa;
   color:#207cca;
 }
-
 
 .searchButton {
 	position:relative;
@@ -216,7 +220,6 @@ p>i {
   -moz-transition: all 0.7s;
   -o-transition: all 0.7s;
   transition: all 0.7s;
-  /*transform: translateX(-50%) translateY(-50%);*/
 }
 
 .navbar-default {
@@ -224,17 +227,6 @@ p>i {
   border-color: rgb(162, 107, 0);
   border-radius-top-right: 0;
   border-radius-top-left: 0;
-}
-
-/*.navbar-brand a:hover{
-  background-color: rgba(249, 205, 53, 0.75);
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  -o-transition: all 0.7s;
-  transition: all 0.7s;
-  /*transform: translateX(-50%) translateY(-50%);*/*/
 }
 
 #responsive-menu a::after{
@@ -255,7 +247,7 @@ p>i {
 #responsive-menu #dropdownMenu li{
   float:left;
   width: 100%;
-  border-bottom: 1px dashed #000;
+  border-bottom: 1px dotted #000;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -273,8 +265,12 @@ p>i {
 
 /*---------------------- MAIN CONTENT ----------------------*/
 #mainContent{
-	width: 95%;
+	/*width: 95%;*/
   padding: 0;
+}
+
+#advantages, #members, #forteGallery, #videos, #playlist, #partners {
+  margin-top: 10%;
 }
 
 /*--------------------- FORTE SERVICES ---------------------*/
@@ -316,14 +312,14 @@ div.carousel-caption>p {
 }
 
 /*-------------------- FORTE ADVANTAGES --------------------*/
-.advantages{
+.forte_advantages{
 	background: rgba(203, 235, 56, 0.8);
 	display: inline-block;
 	padding: 3%;
   border-radius: 5px;
 }
 
-.advantages ul li{
+.forte_advantages ul li{
 	font-family: 'Gabriela', serif;
   font-size: 21px;
   color: rgba(43, 23, 202, 1);
@@ -331,23 +327,28 @@ div.carousel-caption>p {
   padding: 0 40px;
 }
 
-.advantages img{
+.forte_advantages img{
 	width: 2%;
 }
 
 .colorfulGuitar img{
-  width: 57%;
-  height: auto;
-  margin: 0 25%;
+  width: 68%;
+  margin: 0 auto;
 }
 
 /*--------------------- FORTE MEMBERS ----------------------*/
-.member_content{
+.member_content {
 	background-color: rgba(13, 196, 13, 0.8);
-	display: inline-block;
-  padding-bottom: 16px;
+	display: block;
   border-radius: 5px;
   padding-bottom: 20px;
+}
+
+.member_content p span{
+  text-align: justify;
+  font-family: 'Gabriela', serif;
+  font-size: 14px;
+  color: rgba(43, 23, 202, 1);
 }
 
 #kostya, #evgenia {
@@ -367,15 +368,32 @@ div.carousel-caption>p {
 .participants_right{
 	float: right;
 	position: absolute;
-  top: -30%;
-  right: 0.5%;
+  top: -20%;
+  right: 1%;
 }
 
-.member_description{
+.member_description {
+  display: block;
   width: 100%;
   padding: 2% 25%;
+  position: relative;
 }
 
+.member_description span{
+  display: block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.member_description:after {
+  content: "";
+  display: inline-block;
+  background: url(../images/info_line.png) top center no-repeat;
+  width: 100%;
+  height: 18px;
+  margin-top:20px;
+}
 
 /*--------------------- FORTE GALERY ----------------------*/
 #gallery {
@@ -388,24 +406,13 @@ div.carousel-caption>p {
   column-count:         6;
   column-gap:           0px;
   margin: auto;
+  position: relative;
 }
 
 #gallery img {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
-}
-
-#gallery img:hover {
-  -webkit-transform: scale(1.3, 1.3);
-  -ms-transform: scale(1.3, 1.3);
-  transform: scale(1.3, 1.3);
-  position: relative;
-  z-index: 100;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 @media (max-width: 1200px) {
@@ -447,19 +454,31 @@ div.carousel-caption>p {
 
 /*--------------------- FORTE PARTNERS ----------------------*/
 .partnersContent{
-  display: inline-block;
-	background-color: rgba(92, 57, 154, 0.7);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  display: block;
+	background-color: rgba(92, 57, 154, 0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.partnersContent a {
+.partnersContent h3>a, .partnersContent p span {
 	color: #fff;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.partnersContent a:hover {
+  color: rgba(43, 23, 202, 1);
+  background-color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .partnersImg{
-	float: left;
-  margin: 1% 6%;
+  margin: 3% auto;
   border: 1px solid #000;
   background-color: #fff;
   padding: 1%;
@@ -469,7 +488,12 @@ div.carousel-caption>p {
 
 /*--------------------- FORTE FOOTER ----------------------*/
 #footer h3{
-  color: #fff;
+  background-color: #d9ec1e;
+  padding: 10px 0;
+  color: #777;
+  border: 1px solid rgb(162, 107, 0);
+  border-radius: 5px;
+  line-height: 1.4;
 }
 
 .footer{
@@ -478,6 +502,8 @@ div.carousel-caption>p {
   background-image: url(../images/background/banner_bg.jpg);
   background-size: cover;
   background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .formPosition{
