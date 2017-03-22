@@ -97,7 +97,7 @@ p>i {
 	height: auto;
 	display: inline-block;
 	margin: 0;
-	padding: 0;
+	padding: 10px 0;
 }
 
 .logo{
@@ -175,13 +175,13 @@ p>i {
 
 .phoneNumber{
 	color: #fff;
-	font-size: larger;
+	font-size: 20px;
 }
 
 .phoneNumber:hover {
 	color: #000;
   text-decoration: none;
-	font-size: x-large;
+	font-size: 25px;
 	font-weight: bold;
 	background-color: #fff;
 	padding: 0 10px;
@@ -269,10 +269,6 @@ p>i {
   padding: 0;
 }
 
-#advantages, #members, #forteGallery, #videos, #playlist, #partners {
-  margin-top: 10%;
-}
-
 /*--------------------- FORTE SERVICES ---------------------*/
 #services h2{
 	margin-top: 8px;
@@ -291,7 +287,6 @@ p>i {
 div.carousel-caption>p {
 	font-family: 'Gabriela', serif;
 	text-transform: uppercase;
-  font-size: 28px;
   font-style: oblique;
   font-weight: lighter;
   text-align: center;
@@ -307,7 +302,7 @@ div.carousel-caption>p {
 }
 
 .carousel-control.left, .carousel-control.right {
-	width: 10%;
+	width: 6%;
 	border-radius: 5px;
 }
 
@@ -349,41 +344,6 @@ div.carousel-caption>p {
   font-family: 'Gabriela', serif;
   font-size: 14px;
   color: rgba(43, 23, 202, 1);
-}
-
-#kostya, #evgenia {
-	position: relative;
-}
-
-.participants_right, .participants_left{
-  border-radius: 50%;
-  overflow: hidden;
-  width: 20%;
-}
-
-.participants_left{
-	float: left;
-}
-
-.participants_right{
-	float: right;
-	position: absolute;
-  top: -20%;
-  right: 1%;
-}
-
-.member_description {
-  display: block;
-  width: 100%;
-  padding: 2% 25%;
-  position: relative;
-}
-
-.member_description span{
-  display: block;
-  padding: 5px 15px;
-  border-radius: 5px;
-  background-color: #fff;
 }
 
 .member_description:after {
@@ -587,14 +547,102 @@ div.carousel-caption>p {
 	clear: both;
 }
 
-/*Extra small devices (landscape phones, 576px and up)*/
+/*Extra small devices (landscape phones, 320px and up)*/
 @media (min-width: 320px) {
-
+  h1 {
+  font-size: 28px;
+  }
+  h2 {
+  font-size: 24px;
+  }
+  h2 span img{
+    display: none;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p>i{
+    padding: 0 10px;
+  }
+  .phoneNumber {
+    font-size: 14px;
+  }
+  .phoneNumber:hover {
+    font-size: 16px;
+  }
+  div.carousel-caption>p {
+    font-size: 14px;
+  }
+  #advantages, #members, #forteGallery, #videos, #playlist, #partners {
+    margin-top: 5%;
+  } 
+  .forte_advantages ul li{
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .forte_advantages img{
+    width: 5%;
+  }
+  .participants_right, .participants_left{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20%;
+  }
+  .member_description {
+    display: block;
+    width: 100%;
+    padding: 2% 0;
+  }
+  .member_description span{
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  #footer h3{
+    padding: 10px 10px;
+  }
+  .social {
+    margin-top: 10%;
+  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+  h1 {
+  font-size: 40px;
+  }
+  h2 {
+  font-size: 34px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p>i{
+    padding: 0 10px;
+  }
+  .phoneNumber {
+    font-size: 18px;
+  }
+  .phoneNumber:hover {
+    font-size: 20px;
+  }
+  div.carousel-caption>p {
+  font-size: 20px;
+  }
+  .forte_advantages ul li{
+  font-size: 16px;
+  padding: 0 16px;
+  }
+  .forte_advantages img{
+  width: 3%;
+  }
+  .social ul li {
+  padding: 3% 5.4%;
+  }
+  .social {
+  margin-top: 5%;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -603,14 +651,135 @@ div.carousel-caption>p {
     margin-right: -1%;
     margin-left: -1%;
   }
+  h2 {
+    font-size: 40px;
+  }
+  h3{
+    font-size: 27px;
+  }
+  p>i{
+    padding: 0 20px;
+  }
+  .phoneNumber {
+    font-size: 14px;
+  }
+  .phoneNumber:hover {
+    font-size: 14px;
+    font-weight: inherit;
+  }
+  div.carousel-caption>p {
+    font-size: 22px;
+  }
+  .forte_advantages ul li{
+    font-size: 19px;
+    padding: 0 16px;
+  }
+  .forte_advantages img{
+    width: 3%;
+  }
+  #kostya, #vika, #taras {
+    position: relative;
+  }
+  .participants_left{
+    float: left;
+  }
+  .participants_right{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 1%;
+  }
+  .member_description {
+    display: block;
+    width: 100%;
+    padding: 2% 25%;
+    position: relative;
+  }
+  .member_description span{
+    display: block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .social ul li {
+    padding: 3% 6.7%;
+  }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+  h1 {
+    font-size: 44px;
+  }
+  h2 span img{
+    display: inherit;
+  }
+  h3{
+    font-size: 20px;
+  }
+  .phoneNumber {
+    font-size: 18px;
+  }
+  .phoneNumber:hover {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  div.carousel-caption>p {
+    font-size: 28px;
+  }
+    #advantages, #members, #forteGallery, #videos, #playlist, #partners {
+    margin-top: 10%;
+  }
+  .forte_advantages ul li{
+    font-size: 21px;
+    padding: 0 30px;
+  }
+  .forte_advantages img{
+    width: 3%;
+  }
+  .colorfulGuitar img{
+    width: 91%;
+    margin: 0 auto;
+  }
+  .social {
+    margin-top: 10%;
+  }
+  .social ul li {
+    padding: 3% 4.7%;
+  }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  h3{
+    font-size: 22px;
+  }
+  .phoneNumber {
+    font-size: 18px;
+  }
+  .phoneNumber:hover {
+    font-size: 20px;
+  }
+  .forte_advantages ul li{
+    padding: 0 40px;
+  }
+  .forte_advantages img{
+    width: 3%;
+  }
+  .colorfulGuitar img{
+    width: 68%;
+    margin: 0 auto;
+  }
+  .member_description {
+    padding: 4% 25%;
+  }
+  .social ul li {
+    padding: 3% 5.7%;
+  }
 }
